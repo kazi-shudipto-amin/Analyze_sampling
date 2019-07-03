@@ -7,9 +7,9 @@ import pandas as pd
 def structural_histogram(trajectory, d_c):
     """
     Generates a structural histogram of states based on a cutoff RMSD;
-    Inputs- trajectory: trajectory of interest, d_c: a cutoff RMSD;
-    Returns- 1) A dictionary of clusters; the keys are the randomly chosen refernce frames, 
-              and the values are the frames within the cutoff rmsd from the reference
+    Inputs- trajectory: a trajectory of interest in PDB format, d_c: a cutoff RMSD;
+    Returns- 1) A dictionary of clusters; keys-  randomly chosen refernce frames, 
+              vals- frames within cutoff rmsd from the reference frame
              2) a structural histogram
              3) a pandas dataframe- columns represent each reference frame;
                                     rows represent rmsd between each frame 
